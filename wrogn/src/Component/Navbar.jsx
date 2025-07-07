@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
     return (
@@ -68,8 +69,8 @@ export default function Navbar() {
                                         <a href="#FINDSTORES" className="block px-3 py-2 text-sm hover:bg-gray-50">FIND STORES</a>
                                     </div>
                                     <div className="p-2 flex gap-2">
-                                        <a href="" className="w-full py-1 text-sm border text-center rounded hover:bg-gray-100 cursor-pointer">Sign Up</a>
-                                        <a href="" className="w-full py-1 text-sm border text-center rounded hover:bg-gray-100 cursor-pointer">Log In</a>
+                                        <Link to="/signup" className="w-full py-1 text-sm border text-center rounded hover:bg-gray-100 cursor-pointer">Sign Up</Link>
+                                        <Link to="/login" className="w-full py-1 text-sm border text-center rounded hover:bg-gray-100 cursor-pointer">Log In</Link>
                                     </div>
                                 </div>
                             </div>
